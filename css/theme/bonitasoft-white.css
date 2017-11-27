@@ -53,7 +53,7 @@ img.width50 {
 .reveal > .slides > section:first-child > p {
   padding: 20px 0;
   margin: 0 20px;
-  background: url("../../images/logo_with_text.png") no-repeat right center;
+  background: url("../../images/logo_with_text_large.png") no-repeat right center;
   color: #E31837; }
 
 /* Author style */
@@ -80,7 +80,7 @@ img.width50 {
   .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4, .reveal .slides h5, .reveal .slides h6 {
     margin: 0 0 20px 0;
     color: #0C334E;
-    text-align: center;
+    /*text-align: center;*/
     text-transform: none; }
 
 ::selection {
@@ -345,7 +345,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #0C334E;
+  /*border: 4px solid #0C334E;*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
