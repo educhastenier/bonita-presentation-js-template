@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="author" content="Laurent Leseigneur">
     <meta name="author" content="Emmanuel Duchastenier">
 
 
-    <title>Agile Grenoble 2017</title>
+    <title>Bonitasoft presentation template</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/moon.css">
@@ -21,27 +20,26 @@
 
     <!-- Printing and PDF exports -->
     <script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
 </head>
 <body>
 <section class="reveal">
     <section class="slides">
-        <section title="titre">
+
+        <section title="Section 1 title">
             <div data-markdown>
-                # Obtenir des feedbacks de tous vos personas plus rapidement en s’appuyant sur Docker
+                # Presentation title
+                ## 1-line description
             </div>
         </section>
-        <section title="sponsors">
-            <img src="images/sponsors.jpg" width="860" height="620" />
-        </section>
         <section title="presentation speakers">
-            <h2>Qui sommes nous?</h2>
+            <h2>Who are we?</h2>
             <p>Emmanuel Duchastenier</p>
             <p>Laurent Leseigneur</p>
             <p>
@@ -51,11 +49,11 @@
             <p><i class="fa fa-twitter" aria-hidden="true"></i> @LLeseigneur  <i class="fa fa-twitter" aria-hidden="true"></i> @bonitasoft </p>
 
             <aside class="notes" data-markdown>
-                Bonita: outil d'automatisation de Processus ....
+                Introduce Bonitasoft and Bonita: BPM platform ...
             </aside>
         </section>
-        <section title="sommaire">
-            <h1>Sommaire</h1>
+        <section title="summary">
+            <h1>Summary</h1>
             <h3 align="left"><i class="fa fa-book" aria-hidden="true"></i> Fluidifier la production de la documentation</h3>
             <h3 align="left"><i class="fa fa-check-square" aria-hidden="true"></i> Fiabiliser les tests d'intégration avec Docker</h3>
             <h3 align="left"><i class="fa fa-refresh" aria-hidden="true"></i> Faciliter les démos grâce au déploiement continu</h3>
@@ -964,11 +962,9 @@ HEALTHCHECK --interval=5s --retries=120 CMD ["/usr/bin/healthcheck.sh"]
             <div data-markdown>
                 ## Références
 
-                * Site de la doc Bonita: http://documentation.bonitasoft.com
-                * Plugin Maven Docker: [Fabric8](https://maven.fabric8.io/)
-                * Plugin Gradle pour Docker: [gradle-docker-plugin](https://github.com/bmuschko/gradle-docker-plugin)
-                * Image officielle docker avec des vrais morceaux de [Bonita](https://hub.docker.com/_/bonita/)
-                * Cette [présentation](https://laurentleseigneur.github.io/agile-grenoble-2017/): https://github.com/laurentleseigneur/agile-grenoble-2017
+                * Bonita official documentation website: http://documentation.bonitasoft.com
+                * Official [Bonita docker image](https://hub.docker.com/_/bonita/)
+                * These [presentation slides](https://educhastenier.github.io/bonita-presentation-js-template/): https://github.com/educhastenier/bonita-presentation-js-template
             </div>
             <aside class="notes" data-markdown>
                 On vous a mis des références vers les briques dont on vous a parlé
@@ -976,32 +972,52 @@ HEALTHCHECK --interval=5s --retries=120 CMD ["/usr/bin/healthcheck.sh"]
         </section>
 
         <section title="Merci">
-            <h2>Merci pour votre attention</h2>
-            <p align="center"><img src="images/merci.gif"></p>
+            <h2>Thanks for your attention</h2>
             <aside class="notes" data-markdown>
-                Apéro !!!
             </aside>
         </section>
         <section title="Q&A">
             <div data-markdown>
-            ### Questions?
-            ### Remarques?
+            ### Any questions?
             ![questions?](images/questions.jpg)
             </div>
             <aside class="notes" data-markdown>
-                Si vous voulez échanger avec nous, il nous reste x minutes
+                If you have any question... / would like to exchange...
             </aside>
         </section>
+
+
+        <section title="section title">
+            <div data-markdown>
+            # Title
+            ## Title 2
+            ### Title 3
+            ![some image](images/my_image.svg)
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>
+        </section>
+
+        <section>
+            <div data-markdown>
+                Bla bla bla
+            </div>
+            <aside class="notes" data-markdown>
+            </aside>
+        </section>
+
+
     </section>
+
 </section>
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 
 <script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
 
                 // custom Bonitasoft:
                 // width: "70%",
@@ -1009,18 +1025,18 @@ HEALTHCHECK --interval=5s --retries=120 CMD ["/usr/bin/healthcheck.sh"]
                 // margin: 0,
                 // minScale: 1,
                 // maxScale: 1,
-                // // Si on veut que ça autoscroll toutes les 10s. ça affiche en plus un bouton Play/Pause et une spinning Wheel pour montrer le temps qui défile !
+                // // to autoscroll every 10s, with a spinning counter and a play / pause button:
                 // autoSlide: 10000,
                 // :custom Bonitasoft
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
 </script>
 </body>
 </html>
